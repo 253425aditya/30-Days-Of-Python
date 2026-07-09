@@ -41,4 +41,4 @@ print(company.startswith("Coding"))
 print(company.endswith("Coding"))
 
 company = '     Coding For All    '
-print(company)
+print(company.strip())
