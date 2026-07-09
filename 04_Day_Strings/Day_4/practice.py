@@ -28,3 +28,17 @@ print(companies)
 print(company[0])
 print(company[-1])
 print(company[10])
+
+company = 'Coding For All'
+print(company.index('l'))
+
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.index('because'))
+
+print(sentence[sentence.index('because') : sentence.index('is')])
+
+print(company.startswith("Coding"))
+print(company.endswith("Coding"))
+
+company = '     Coding For All    '
+print(company)
