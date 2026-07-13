@@ -42,3 +42,23 @@ print(company.endswith("Coding"))
 
 company = '     Coding For All    '
 print(company.strip())
+
+
+c1 = '30DaysofPython'
+c2 = 'thirty_Days_of_Python'
+print(c1.isidentifier())
+print(c2.isidentifier())
+
+framwork = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+join_famework = '#'.join(framwork)
+print(join_famework)
+
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+print("Name\tAge\tCountry\t\tCity\nAditya\t100\tSwitzerland\tHelsinki")
+
+radius = 10
+area = 3.14 * radius ** 2
+print(f"The area of a circle with radius {radius} is {area} meters square.")
+a,b=4,3
+print(f"8//6 = {8/6:.2f}")
