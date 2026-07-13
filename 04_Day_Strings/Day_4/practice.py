@@ -60,5 +60,4 @@ print("Name\tAge\tCountry\t\tCity\nAditya\t100\tSwitzerland\tHelsinki")
 radius = 10
 area = 3.14 * radius ** 2
 print(f"The area of a circle with radius {radius} is {area} meters square.")
-
 print(f"8//6 = {8/6:.2f}")
