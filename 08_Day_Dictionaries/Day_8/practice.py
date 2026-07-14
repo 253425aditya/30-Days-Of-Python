@@ -19,3 +19,18 @@ print(len(dog))
 
 print(student['skills'])
 print(type(student['skills']))
+
+student['skills'].append('Powee BI')
+
+print(student.keys())
+print()
+print(student.values())
+print()
+print(student.items())
+print()
+
+del student['first_name']
+del dog
+
+print(student)
+print(dog)
