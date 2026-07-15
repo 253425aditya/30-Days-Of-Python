@@ -1,5 +1,13 @@
-age = int(input("Enter your age: "))
-if age >= 18 :
-    print("You are old enough to learn to drive.")
+# age = int(input("Enter your age: "))
+# if age >= 18 :
+#     print("You are old enough to learn to drive.")
+# else :
+#     print(f"You need {18-age} more years to learn to drive.")
+
+num1 = int(input("Enter your num1: "))
+num2 = int(input("Enter your num2: "))
+if num1 > num2 :
+    print("Number 1 is greater Than number 2")
 else :
-    print(f"You need {18-age} more years to learn to drive.")
+    print("Number 2 is greater Than number 1")
+
