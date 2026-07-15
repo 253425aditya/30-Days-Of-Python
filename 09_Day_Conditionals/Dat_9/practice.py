@@ -11,14 +11,32 @@
 # else :
 #     print("Number 2 is greater Than number 1")
 
-score = int(input("Enter you score : "))
-if score >= 90 :
-    print('A')
-elif score >= 80 :
-    print('B')
-elif score >= 70 :
-    print('C')
-elif score >= 60 :
-    print('D')
-else :
-    print('Fail')
+# score = int(input("Enter you score : "))
+# if score >= 90 :
+#     print('A')
+# elif score >= 80 :
+#     print('B')
+# elif score >= 70 :
+#     print('C')
+# elif score >= 60 :
+#     print('D')
+# else :
+#     print('Fail')
+
+Autumn = ['September', 'October', 'November']
+Winter = ['December', 'January', 'February']
+Spring  = ['March', 'April', 'May']
+Summer = ['June', 'July', 'August']
+
+season = input("Enter a Season : ")
+season = season.capitalize()
+if season in Autumn:
+    print("Season is Autumn")
+elif season in Winter:
+    print("Season is Winter")
+elif season in Spring:
+    print("Season is Spring")
+elif season in Summer:
+    print("Season is Summer")
+else:
+    print("Enter Valid Month name")
