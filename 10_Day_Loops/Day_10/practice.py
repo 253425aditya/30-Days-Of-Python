@@ -37,4 +37,20 @@ for i in range(101):
     if i%2!=0:
         print(i)
 
-      
+print("\n")
+sum = 0
+for i in range(101):
+    sum = sum+i
+print(sum)
+
+
+print("\n")
+even = 0
+odd = 0
+for i in range(101):
+    if(i%2==0):
+        even = even+i
+    else:
+        odd = odd+i
+
+print(f"Even sum: {even}\nOdd sum: {odd}")
