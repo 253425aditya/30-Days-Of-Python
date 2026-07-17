@@ -35,6 +35,13 @@ def generate_colors(which,num):
         rgb_color_gen(num)
 
 
-generate_colors('rbg',2)
+# generate_colors('rbg',2)
 
+import random
+
+def generate_seven_unique_numbers():
+    unique_numbers = random.sample(range(0, 10), 7)
+    return unique_numbers
+
+print(generate_seven_unique_numbers())
 
