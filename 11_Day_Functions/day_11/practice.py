@@ -43,7 +43,24 @@ def print_list(lst):
 def add_item(lst,item):
     lst.append(item)
 
+def evens_and_odds(num):
+    even = 0
+    odd = 0
+    for i in range(0,num+1):
+        if i%2==0 :
+            even = even + 1
+        else :
+            odd = odd + 1
+    return f"Even sum : {even}\nOdd sum : {odd}"
+
+def factorial(num):
+    fact = 1
+    for i in range(1,num+1):
+        fact = fact*i
+    return fact
+
+def greet(name = 'Guest'):
+    print(f"Hello, {name}!")
 
 lst = [2,6,3,11]
-add_item(lst,100)
-print(lst)
+greet("Manu")
