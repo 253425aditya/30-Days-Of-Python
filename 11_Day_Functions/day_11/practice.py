@@ -62,5 +62,18 @@ def factorial(num):
 def greet(name = 'Guest'):
     print(f"Hello, {name}!")
 
-lst = [2,6,3,11]
-greet("Manu")
+def is_prime(num):
+    for i in range(2,num):
+        temp = num/i
+        if temp.is_integer():
+            return "Number is Not prime"
+    return "Number is prime"
+
+def Is_all_unique(lst):
+    sett = set(lst)
+    if len(sett) == len(lst):
+        return "All number are Unique"
+    return "All numbers are not Unique"
+
+lst = [2,6,3,11,2]
+print(Is_all_unique(lst))
