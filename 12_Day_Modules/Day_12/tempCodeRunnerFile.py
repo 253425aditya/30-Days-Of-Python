@@ -35,6 +35,4 @@ def generate_colors(which,num):
         rgb_color_gen(num)
 
 
-generate_colors('rbg',2)
-
-
+generate_colors('hexa',2)
