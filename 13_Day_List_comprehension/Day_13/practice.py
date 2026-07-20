@@ -1,16 +1,17 @@
-fruits = ['banana', 'orange', 'mango', 'lemon']
-first_letter_fruits = [i[0] for i in fruits]
+numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
+filter_neg = [i for i in numbers if i<0]
 
-numbers = list(range(1,11))
-print(numbers)
-even_sq = [i**2 for i in numbers if i%2==0]
-print(even_sq)
+list_of_lists =[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+linear_list = [i for sublist in list_of_lists for i in sublist]
 
-strings = ['1','2','3','4','5']
-integer = [int(i) for i in strings]
-print(type(integer[0]))
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+output = [[pair[0].upper(), pair[0][:3].upper(), pair[1].upper()] for sublist in countries for pair in sublist]
 
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 
-num = 12
-div = [n for n in range(1,12+1) if num%n==0]
-print(div)
+dicti = [{'Country' : item[0][0], 'City' : item[0][1]} for item in countries]
+
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+
+full_name = [item[0][0]+" "+item[0][1] for item in names] 
+print(full_name)
