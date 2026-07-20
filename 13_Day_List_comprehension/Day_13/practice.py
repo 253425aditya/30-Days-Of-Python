@@ -18,3 +18,5 @@ print(full_name)
 
 nums = [i for i in range(100)]
 print(nums)
+
+print(names)
