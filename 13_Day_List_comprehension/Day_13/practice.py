@@ -15,3 +15,6 @@ names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')],
 
 full_name = [item[0][0]+" "+item[0][1] for item in names] 
 print(full_name)
+
+nums = [i for i in range(100)]
+print(nums)
