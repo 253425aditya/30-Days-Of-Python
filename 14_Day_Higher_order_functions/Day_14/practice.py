@@ -1,3 +1,5 @@
+import functools
+
 countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
 names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -49,4 +51,48 @@ countries = [
     "Zambia", "Zimbabwe"
 ]
 
-call(countries)
+#call(countries)
+
+# def upper_(country):
+#     return country.upper()
+
+
+# upper_country = map(upper_,countries)
+# print(list(upper_country))
+
+def contain_land(country):
+    if 'land' in country:
+        return True
+
+def have_6_char(country):
+    if len(country) == 6:
+        return True
+
+def country_starts_with_E(country):
+    if country.startswith('E'):
+        return True
+
+filtered_country_contain_land = filter(country_starts_with_E,countries)
+print(list(filtered_country_contain_land))
+
+def get_string_lists(temp):
+    if type(temp) == str:
+        return True
+
+sample_input_1 = ["apple", 42, "banana", True, 3.14, "cherry", None]
+# Expected output: ["apple", "banana", "cherry"]
+
+ok = filter(get_string_lists,sample_input_1)
+print(list(ok))
+
+def sumOfAllNumbers(a,b):
+    return a+b
+
+numbers = list(range(1,11))
+
+def combine_country(c1,c2):
+    return c1+", "+c2
+
+sum = functools.reduce(combine_country,countries)
+print(sum)
+
