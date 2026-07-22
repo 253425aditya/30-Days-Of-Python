@@ -96,3 +96,4 @@ def combine_country(c1,c2):
 sum = functools.reduce(combine_country,countries)
 print(sum)
 
+    
