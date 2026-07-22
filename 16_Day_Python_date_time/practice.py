@@ -16,7 +16,7 @@ date_obj = datetime.strptime(date,"%d %B, %Y")
 from datetime import date
 
 # Use date() to define specific calendar dates
-t2 = date(1970, 1, 1)   # New Year's Day
+t2 = date(2027, 1, 1)   # New Year's Day
 t1 = date(2026, 7, 22)   # Today
 
 # Subtract early date from later date
