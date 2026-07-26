@@ -1,9 +1,21 @@
-import requests # importing the request module
+import requests
+import statistics
 
-url = 'https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z' # text from a website
+url = 'https://api.thecatapi.com/v1/breeds'
 
-response = requests.get(url) # opening a network and fetching a data
-print(response)
-print(response.status_code) # status code, success:200
-print(response.headers)     # headers information
-print(response.text) # gives all the text from the page
+response = requests.get(url)
+
+print(response.status_code)
+
+cats = response.json()
+
+ages = []
+
+for cat in cats:
+    ages.append(int(cat["life_span"][-2:]))
+
+print("Minimum:", min(ages))
+print("Maximum:", max(ages))
+print("Mean:", statistics.mean(ages))
+print("Median:", statistics.median(ages))
+print("Standard Deviation:", statistics.stdev(ages))
