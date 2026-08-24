@@ -35,10 +35,24 @@ class dobleLL:
         self.head.prev = temp
         self.head = temp
 
+    def insertAtMiddle(self,value,x):
+        t = self.head
+        while t.next is not None:
+            if t.data == x:
+                break
+            else:
+                t = t.next
+        temp = Node(value)
+        temp.next = t.next
+        t.next.prev = temp
+        t.next = temp
+        temp.prev = t
+
 obj = dobleLL()
 obj.insertAtEnding(10)
 obj.insertAtEnding(20)
 obj.insertAtEnding(30)
 obj.insertAtEnding(40)
 obj.insertAtBeg(5)
+obj.insertAtMiddle(25,20)
 obj.PrintLL()
